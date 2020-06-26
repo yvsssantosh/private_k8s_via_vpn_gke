@@ -1,0 +1,5 @@
+# VPN Client Files
+*.ovpn
+
+# Mac OS Files
+.DS_Store

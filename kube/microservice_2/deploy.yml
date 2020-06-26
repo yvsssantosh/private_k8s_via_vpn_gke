@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supplyai-microservice2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: supplyai-microservice2
+  template:
+    metadata:
+      labels:
+        app: supplyai-microservice2
+    spec:
+      containers:
+      - name: supplyai-microservice2
+        image: paulbouwer/hello-kubernetes:1.8
+        ports:
+        - containerPort: 8080
+        env:
+        - name: MESSAGE
+          value: "SUPPLY_AI : Hello World from Microservice 2"
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "200Mi"
+          limits:
+            cpu: "200m"
+            memory: "400Mi"
