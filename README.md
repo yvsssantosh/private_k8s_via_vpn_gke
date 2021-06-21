@@ -2,6 +2,10 @@
 
 ![](images/architecture.png)
 
+## Watch the video
+[![](https://img.youtube.com/vi/EAQUkPQBNjU/maxresdefault.jpg)](https://www.youtube.com/watch?v=EAQUkPQBNjU)
+
+
 In this tutorial we'll install a VPN (OpenVPN Server) and connect to our k8s cluster via the VPN. In a private k8s cluster, the nodes have reserved IP addresses only, which ensures that their workloads are isolated from the public internet. 
 
 The tutorial involves:
