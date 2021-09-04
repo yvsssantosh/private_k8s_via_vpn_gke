@@ -181,7 +181,7 @@ gunzip -c /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz | s
 Lets go ahead and run the following edits on the file we copied:
 1. Uncomment `tls-auth ta.key 0` directive, i.e. remove the `;` before it
 2. Set `key-direction 0`, anywhere in the file, which specifies its a server file
-3. Set `cipher AES-128-CDC`
+3. Set `cipher AES-128-CBC`
 4. Set `auth SHA256`
 5. Uncomment `user nobody` and `group nobody`, i.e., remove the `;` before it
 6. We want to send all traffic through VPN, so find `push "redirect-gateway def1 bypass-dhcp"` and uncomment it
